@@ -1,8 +1,8 @@
 <script setup>
+
 </script>
 
 <template>
-  <router-view>
-
-  </router-view>
+    <h1>Layout header</h1>
+    <slot/>
 </template>
