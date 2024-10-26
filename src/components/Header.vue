@@ -2,7 +2,9 @@
     <!-- Nav Section -->
     <nav class="bg-brand-white-smoke text-brand-black shadow-md fixed top-0 left-0 right-0 z-20 h-20">
         <div class="flex justify-between items-center px-brand-xl py-4 w-full h-full">
-            <h1 class="text-lg font-semibold">narrable</h1>
+            <a href="#">
+                <img src="/src/assets/svg/brand-logo.svg" alt="logo">
+            </a>
             <!-- Hamburger Menu Icon -->
             <button @click="toggleMenu" class="text-black focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"

@@ -38,7 +38,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 
                 <div class="flex justify-center py-4">
                     <div class="px-4 flex flex-col items-center text-center lg:px-36">
-                        <span class="text-brand-black uppercase">Trusted by</span>
+                        <span class="text-brand-black">Trusted by</span>
                         <div class="flex flex-wrap gap-12 w-full justify-center items-center mt-8 text-gray-500 sm:justify-between">
                             <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
                                 <img class="max-h-12" src="/src/assets/images/amcare-pro.png" alt="amcare">
@@ -53,6 +53,8 @@ import AppLayout from '@/layouts/AppLayout.vue';
                     </div>
                 </div>
             </section>
+
+            <!-- Solutions section -->
         </div>
     </AppLayout>
 </template>
