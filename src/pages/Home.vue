@@ -1,6 +1,7 @@
 <script setup>
 import AppLayout from '@/layouts/AppLayout.vue';
 import ImageCard from '@/components/CardWithImage.vue'
+import BenefitsCard from '@/components/BenefitsCard.vue';
 </script>
 
 <template>
@@ -101,6 +102,24 @@ import ImageCard from '@/components/CardWithImage.vue'
                             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
                             Contact us
                         </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits section -->
+            <section class="bg-brand-white-smoke py-10">
+                <div class="p-brand-xl">
+                    <div class="flex flex-col gap-4 justify-center items-center">
+                        <img src="/src/assets/svg/icon.svg" alt="icon">
+                        <h1
+                            class="max-w-2xl mb-4 text-2xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-black">
+                            Unlock value on day one</h1>
+                        <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-brand-slate-gray">
+                            There is no better time than now to unlock ROI in home health.</p>
+                    </div>
+
+                    <div>
+                        <BenefitsCard />
                     </div>
                 </div>
             </section>

@@ -16,12 +16,12 @@ defineProps({
 </script>
 
 <template>
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+    <div class="max-w-sm bg-brand-white-smoke border-gray-200 rounded-lg shadow">
         <a href="#">
             <img class="rounded-t-lg" :src="image" alt="card-image" />
         </a>
 
-        <div class="p-5 bg-brand-white-smoke">
+        <div class="p-5">
             <a href="#">
                 <h5 class="mb-2 text-lg font-light tracking-tight text-brand-black">{{ title }}</h5>
             </a>
