@@ -1,8 +1,9 @@
 <script setup>
-
+import AppHeader from '@/components/Header.vue';
 </script>
 
 <template>
-    <h1>Layout header</h1>
+    <AppHeader/>
+
     <slot/>
 </template>
