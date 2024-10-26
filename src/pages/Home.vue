@@ -1,5 +1,6 @@
 <script setup>
 import AppLayout from '@/layouts/AppLayout.vue';
+import ImageCard from '@/components/CardWithImage.vue'
 </script>
 
 <template>
@@ -39,7 +40,8 @@ import AppLayout from '@/layouts/AppLayout.vue';
                 <div class="flex justify-center py-4">
                     <div class="px-4 flex flex-col items-center text-center lg:px-36">
                         <span class="text-brand-black">Trusted by</span>
-                        <div class="flex flex-wrap gap-12 w-full justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                        <div
+                            class="flex flex-wrap gap-12 w-full justify-center items-center mt-8 text-gray-500 sm:justify-between">
                             <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
                                 <img class="max-h-12" src="/src/assets/images/amcare-pro.png" alt="amcare">
                             </a>
@@ -55,6 +57,53 @@ import AppLayout from '@/layouts/AppLayout.vue';
             </section>
 
             <!-- Solutions section -->
+            <section class="">
+                <div class="flex flex-col gap-10 items-center justify-center p-brand-xl">
+                    <div>
+                        <img src="/src/assets/svg/icon.svg" alt="icon">
+                    </div>
+
+                    <div class="text-center">
+                        <h1
+                            class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-black">
+                            A platform designed for home health</h1>
+
+                        <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-brand-slate-gray">
+                            Finally, a platform designed in partnership with every team in home health.</p>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-[auto] auto-cols-fr gap-x-8 gap-y-16">
+                        <ImageCard />
+
+                        <ImageCard image="/src/assets/images/card-2.jpg" title="Directors of Nursing"
+                            description="Enable clinicians to focus on patient care, unburdened." />
+
+                        <ImageCard image="/src/assets/images/card-3.jpg" title="Director of Operations"
+                            description="Put an end to double data entry in home health." />
+
+                        <ImageCard image="/src/assets/images/card-4.jpg" title="Director of Finance"
+                            description="Bill and collect with ease in an ever-changing payer landscape." />
+                    </div>
+
+                    <div>
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-brand-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                            Book a demo
+                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </AppLayout>
 </template>
