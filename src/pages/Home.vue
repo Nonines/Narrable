@@ -2,6 +2,7 @@
 import AppLayout from '@/layouts/AppLayout.vue';
 import ImageCard from '@/components/CardWithImage.vue'
 import BenefitsCard from '@/components/BenefitsCard.vue';
+import Button from '@/components/BrandButton.vue';
 </script>
 
 <template>
@@ -18,16 +19,7 @@ import BenefitsCard from '@/components/BenefitsCard.vue';
                         <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-brand-slate-gray">
                             The modern, AI-powered platform for home health. Automating up to 60% of your administrative
                             tasks every day.</p>
-                        <a href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-brand-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                            Book a demo
-                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
+                        <Button />
                         <a href="#"
                             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-brand-white-smoke rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
                             Learn more
@@ -88,16 +80,9 @@ import BenefitsCard from '@/components/BenefitsCard.vue';
                     </div>
 
                     <div>
-                        <a href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-brand-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                        <Button custom-classes="">
                             Book a demo
-                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
+                        </Button>
                         <a href="#"
                             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
                             Contact us
@@ -131,16 +116,9 @@ import BenefitsCard from '@/components/BenefitsCard.vue';
                         title="Equip clinicians with AI"
                         description="Enable quality documentation upfront with AI. Reduce clinician turnover by up to 30%."
                         video="/src/assets/videos/AI Vitals.mp4">
-                        <a href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-brand-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 w-3/4">
+                        <Button custom-classes="w-3/4">
                             Book a demo
-                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
+                        </Button>
                         </BenefitsCard>
                     </div>
                 </div>
