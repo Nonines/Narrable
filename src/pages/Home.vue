@@ -109,17 +109,39 @@ import BenefitsCard from '@/components/BenefitsCard.vue';
             <!-- Benefits section -->
             <section class="bg-brand-white-smoke py-10">
                 <div class="p-brand-xl">
-                    <div class="flex flex-col gap-4 justify-center items-center">
+                    <div class="flex flex-col gap-4 justify-center items-center text-center">
                         <img src="/src/assets/svg/icon.svg" alt="icon">
                         <h1
-                            class="max-w-2xl mb-4 text-2xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-black">
+                            class="max-w-2xl mb-4 text-3xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-black">
                             Unlock value on day one</h1>
                         <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-brand-slate-gray">
                             There is no better time than now to unlock ROI in home health.</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-12 md:gap-14 lg:gap-16">
                         <BenefitsCard />
+                        <BenefitsCard
+                        icon="/src/assets/svg/dollar-sign.svg"
+                        title="Boost margins with automation"
+                        description="Free up your team with API-driven automation solutions. Save up to 60% in inefficiencies per year."
+                        video="/src/assets/videos/verify-unsuccesful.mp4"
+                        />
+                        <BenefitsCard
+                        icon="/src/assets/svg/smiley.svg"
+                        title="Equip clinicians with AI"
+                        description="Enable quality documentation upfront with AI. Reduce clinician turnover by up to 30%."
+                        video="/src/assets/videos/AI Vitals.mp4">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-brand-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 w-3/4">
+                            Book a demo
+                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        </BenefitsCard>
                     </div>
                 </div>
             </section>
