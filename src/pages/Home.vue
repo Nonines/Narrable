@@ -4,6 +4,7 @@ import ImageCard from '@/components/CardWithImage.vue'
 import BenefitsCard from '@/components/BenefitsCard.vue';
 import Button from '@/components/BrandButton.vue';
 import WhyUsTab from '@/components/WhyUsTab.vue';
+import Panels from '@/components/Panels.vue';
 </script>
 
 <template>
@@ -112,7 +113,7 @@ import WhyUsTab from '@/components/WhyUsTab.vue';
                         <BenefitsCard icon="/src/assets/svg/smiley.svg" title="Equip clinicians with AI"
                             description="Enable quality documentation upfront with AI. Reduce clinician turnover by up to 30%."
                             video="/src/assets/videos/AI Vitals.mp4">
-                            <Button custom-classes="w-3/4">
+                            <Button custom-classes="w-3/4 md:w-1/2">
                                 Book a demo
                             </Button>
                         </BenefitsCard>
@@ -141,14 +142,16 @@ import WhyUsTab from '@/components/WhyUsTab.vue';
                     </div>
 
                     <!-- tabs -->
-                    <div class="flex justify-center">
+                    <div class="flex flex-col items-center md:flex-row md:justify-center">
                         <WhyUsTab />
                         <WhyUsTab heading="AI Powered" description="Lastest advances in AI augment your day-to-day interactions."/>
                         <WhyUsTab heading="Modern Design" description="Built with the user in mind for the 21st century." />
                     </div>
 
-                    <!-- content -->
-                    <div></div>
+                    <!-- panels-wrapper -->
+                    <div class="overflow-hidden mt-8">
+                        <Panels />
+                    </div>
                 </div>
             </section>
         </div>
