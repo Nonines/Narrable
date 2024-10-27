@@ -3,6 +3,7 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import ImageCard from '@/components/CardWithImage.vue'
 import BenefitsCard from '@/components/BenefitsCard.vue';
 import Button from '@/components/BrandButton.vue';
+import WhyUsTab from '@/components/WhyUsTab.vue';
 </script>
 
 <template>
@@ -105,22 +106,49 @@ import Button from '@/components/BrandButton.vue';
 
                     <div class="flex flex-col gap-12 md:gap-14 lg:gap-16">
                         <BenefitsCard />
-                        <BenefitsCard
-                        icon="/src/assets/svg/dollar-sign.svg"
-                        title="Boost margins with automation"
-                        description="Free up your team with API-driven automation solutions. Save up to 60% in inefficiencies per year."
-                        video="/src/assets/videos/verify-unsuccesful.mp4"
-                        />
-                        <BenefitsCard
-                        icon="/src/assets/svg/smiley.svg"
-                        title="Equip clinicians with AI"
-                        description="Enable quality documentation upfront with AI. Reduce clinician turnover by up to 30%."
-                        video="/src/assets/videos/AI Vitals.mp4">
-                        <Button custom-classes="w-3/4">
-                            Book a demo
-                        </Button>
+                        <BenefitsCard icon="/src/assets/svg/dollar-sign.svg" title="Boost margins with automation"
+                            description="Free up your team with API-driven automation solutions. Save up to 60% in inefficiencies per year."
+                            video="/src/assets/videos/verify-unsuccesful.mp4" />
+                        <BenefitsCard icon="/src/assets/svg/smiley.svg" title="Equip clinicians with AI"
+                            description="Enable quality documentation upfront with AI. Reduce clinician turnover by up to 30%."
+                            video="/src/assets/videos/AI Vitals.mp4">
+                            <Button custom-classes="w-3/4">
+                                Book a demo
+                            </Button>
                         </BenefitsCard>
                     </div>
+                </div>
+            </section>
+
+            <!-- Why-Us Section -->
+            <section class="py-10 bg-brand-black">
+                <div class="p-brand-xl">
+                    <!-- background logo -->
+                    <div class="max-w-7xl relative !mx-auto">
+                        <img class="absolute will-change-transform" src="/src/assets/svg/background-logo.svg" alt=""
+                            style="transform: translate3d(0px, -10.4982px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-1.79992deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-col gap-4 justify-center items-center text-center">
+                        <img src="/src/assets/svg/icon.svg" alt="icon">
+                        <h1
+                            class="max-w-2xl mb-4 text-3xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-white-smoke">
+                            The Narrable difference</h1>
+                        <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-brand-slate-gray">
+                            We are a team of healthcare professionals. Our mission is to empower clinicians to deliver
+                        </p>
+                    </div>
+
+                    <!-- tabs -->
+                    <div class="flex justify-center">
+                        <WhyUsTab />
+                        <WhyUsTab heading="AI Powered" description="Lastest advances in AI augment your day-to-day interactions."/>
+                        <WhyUsTab heading="Modern Design" description="Built with the user in mind for the 21st century." />
+                    </div>
+
+                    <!-- content -->
+                    <div></div>
                 </div>
             </section>
         </div>
