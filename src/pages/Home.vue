@@ -5,6 +5,8 @@ import BenefitsCard from '@/components/BenefitsCard.vue';
 import Button from '@/components/BrandButton.vue';
 import WhyUsTab from '@/components/WhyUsTab.vue';
 import Panels from '@/components/Panels.vue';
+import ProductIcon from '@/components/ProductIcon.vue';
+import ProductCheckItem from '@/components/ProductCheckListItem.vue';
 </script>
 
 <template>
@@ -144,13 +146,129 @@ import Panels from '@/components/Panels.vue';
                     <!-- tabs -->
                     <div class="flex flex-col items-center md:flex-row md:justify-center">
                         <WhyUsTab />
-                        <WhyUsTab heading="AI Powered" description="Lastest advances in AI augment your day-to-day interactions."/>
-                        <WhyUsTab heading="Modern Design" description="Built with the user in mind for the 21st century." />
+                        <WhyUsTab heading="AI Powered"
+                            description="Lastest advances in AI augment your day-to-day interactions." />
+                        <WhyUsTab heading="Modern Design"
+                            description="Built with the user in mind for the 21st century." />
                     </div>
 
                     <!-- panels-wrapper -->
                     <div class="overflow-hidden mt-8">
                         <Panels />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home-Product section -->
+            <section class="py-10 bg-brand-black">
+                <div class="p-brand-xl flex flex-col md:flex-row gap-4 justify-center items-start">
+                    <!-- left -->
+                    <div class="flex flex-col gap-4 w-full items-start text-center md:sticky md:top-28">
+                        <img src="/src/assets/svg/icon.svg" alt="icon">
+
+                        <h1
+                            class="max-w-2xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-white-smoke text-left">
+                            The modern system of record for home health.
+                        </h1>
+
+                        <div class="flex flex-col gap-3 md:flex-row text-brand-white-smoke font-bold">
+                            <Button custom-classes="px-10 py-5 bg-brand-lime-bright text-nowrap">
+                                Book a demo
+                            </Button>
+                            <a href="#"
+                                class="inline-flex items-center justify-center px-1 py-4 text-base font-medium text-center bg-brand-lime-light rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-3/4 text-nowrap md:w-full md:px-4">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="flex flex-col gap-10 w-full">
+                        <!-- item -->
+                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-brand-lime-dark">
+                            <ProductIcon custom-classes="bg-brand-lime-light" svg="/src/assets/svg/clipboard.svg"
+                                alt-text="clipboard-icon" />
+
+                            <h1 class="text-brand-white-smoke text-3xl md:text-4xl lg:text-5xl">
+                                Electronic Health Record
+                            </h1>
+
+                            <p class="text-brand-slate-gray text-xl">Designed for any device across any platform.</p>
+
+                            <!-- checklist -->
+                            <div class="flex flex-col gap-3 justify-between items-center">
+                                <ProductCheckItem title="Referrals Management"
+                                    description="Referrals pipeline that monitors and accelerates patient admission." />
+
+                                <ProductCheckItem title="Patient Profile"
+                                    description="Patient demographics, medical history, and documents management." />
+
+                                <ProductCheckItem title="Staff & Schedule"
+                                    description="Care team assignment and scheduling based on capacity and geography." />
+
+                                <ProductCheckItem title="Clinical Documentation"
+                                    description="Mobile-first assessments, visit notes, plans of care, OASIS-E, and real-time quality checks powered by AI." />
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-brand-lime-dark">
+                            <ProductIcon custom-classes="bg-brand-lime-light" svg="/src/assets/svg/dollar-sign.svg"
+                                alt-text="dollar-icon" />
+
+                            <h1 class="text-brand-white-smoke text-3xl md:text-4xl">
+                                Revenue Cycle Management
+                            </h1>
+
+                            <p class="text-brand-slate-gray text-xl">For multi-payer home health agencies. Covers
+                                Medicare, Medicare Advantage, Medicaid, Managed Medicaid, and Commercial plans.</p>
+
+                            <!-- checklist -->
+                            <div class="flex flex-col gap-3 justify-between items-center">
+                                <ProductCheckItem title="Eligibility Verification"
+                                    description="Detailed eligibility report including patient copays and prior home health admissions." />
+
+                                <ProductCheckItem title="Prior Authorization"
+                                    description="Multi-payer prior authorization rules, authorization requests, and schedule warnings." />
+
+                                <ProductCheckItem title="Claims"
+                                    description="Multi-payer claims, claim status history, and claim corrections workflow with automated revenue codes." />
+
+                                <ProductCheckItem title="Remits"
+                                    description="Remittance advice, payment history, and translation of adjustment codes." />
+
+                                <ProductCheckItem title="Accounts Receivable"
+                                    description="Accurate revenue forecasts and accounts receivables based on PDGM, LUPA, and contracted rates." />
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-brand-lime-dark">
+                            <ProductIcon custom-classes="bg-brand-lime-light" svg="/src/assets/svg/analytics.svg"
+                                alt-text="clipboard-icon" />
+
+                            <h1 class="text-brand-white-smoke text-3xl md:text-4xl lg:text-5xl">
+                                Embedded Analytics
+                            </h1>
+
+                            <p class="text-brand-slate-gray text-xl">Provide decision-making tools for home health
+                                leaders at all levels.</p>
+
+                            <!-- checklist -->
+                            <div class="flex flex-col gap-3 justify-between items-center">
+                                <ProductCheckItem title="Growth Dashboard"
+                                    description="Referrals and patient census dashboard with HHRG and case mix targets." />
+
+                                <ProductCheckItem title="Financial Dashboard"
+                                    description="Month over month expected revenue vs amount paid, by payer." />
+
+                                <ProductCheckItem title="Compliance Dashboard"
+                                    description="Clinical note and order compliance dashboard with automated alerts for overdue documentation." />
+
+                                <ProductCheckItem title="Build Your Own"
+                                    description="Ability to build your own dashboard across any data in the system." />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

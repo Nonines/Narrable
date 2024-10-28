@@ -1,4 +1,6 @@
 <script setup>
+import ProductIcon from './ProductIcon.vue';
+
 defineProps({
     icon: {
         type: String,
@@ -24,9 +26,7 @@ defineProps({
         class="grid grid-cols-1 md:grid-cols-[0.75fr_1fr] lg:grid-cols-2 lg:grid-rows-[auto] gap-y-8 sm:gap-y-12 md:gap-y-16 gap-x-12 lg:gap-x-24 grid-flow-row md:auto-cols-fr min-h-[auto] items-center">
         <!-- content -->
         <div class="flex flex-col gap-8">
-            <div class="flex justify-center items-center w-14 h-14 bg-brand-black rounded-lg">
-                <img :src="icon" alt="icon">
-            </div>
+            <ProductIcon :svg="icon"/>
 
             <h1 class="max-w-2xl text-4xl font-light tracking-tight leading-none md:text-5xl text-brand-black">
                 {{ title }}
