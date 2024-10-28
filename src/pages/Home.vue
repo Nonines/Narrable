@@ -212,15 +212,15 @@ import ProductCheckItem from '@/components/ProductCheckListItem.vue';
                         </div>
 
                         <!-- item -->
-                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-brand-lime-dark">
-                            <ProductIcon custom-classes="bg-brand-lime-light" svg="/src/assets/svg/dollar-sign.svg"
+                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-[#2c4548]">
+                            <ProductIcon custom-classes="bg-[#43585a]" svg="/src/assets/svg/dollar-sign.svg"
                                 alt-text="dollar-icon" />
 
                             <h1 class="text-brand-white-smoke text-3xl md:text-4xl">
                                 Revenue Cycle Management
                             </h1>
 
-                            <p class="text-brand-slate-gray text-xl">For multi-payer home health agencies. Covers
+                            <p class="text-slate-400 text-xl">For multi-payer home health agencies. Covers
                                 Medicare, Medicare Advantage, Medicaid, Managed Medicaid, and Commercial plans.</p>
 
                             <!-- checklist -->
@@ -243,15 +243,15 @@ import ProductCheckItem from '@/components/ProductCheckListItem.vue';
                         </div>
 
                         <!-- item -->
-                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-brand-lime-dark">
-                            <ProductIcon custom-classes="bg-brand-lime-light" svg="/src/assets/svg/analytics.svg"
+                        <div class="flex flex-col gap-4 p-8 md:p-10 rounded-xl bg-[#3e5759]">
+                            <ProductIcon custom-classes="bg-[#53666b]" svg="/src/assets/svg/analytics.svg"
                                 alt-text="clipboard-icon" />
 
                             <h1 class="text-brand-white-smoke text-3xl md:text-4xl lg:text-5xl">
                                 Embedded Analytics
                             </h1>
 
-                            <p class="text-brand-slate-gray text-xl">Provide decision-making tools for home health
+                            <p class="text-slate-400 text-xl">Provide decision-making tools for home health
                                 leaders at all levels.</p>
 
                             <!-- checklist -->

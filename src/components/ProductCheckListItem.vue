@@ -20,7 +20,7 @@ defineProps({
 
         <div class="flex flex-col w-full">
             <h5 class="mb-1 text-brand-white-smoke font-extrabold">{{ title }}</h5>
-            <p class="text-brand-slate-gray">{{ description }}</p>
+            <p class="text-slate-400">{{ description }}</p>
         </div>
     </div>
 </template>
