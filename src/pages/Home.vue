@@ -7,6 +7,7 @@ import WhyUsTab from '@/components/WhyUsTab.vue';
 import Panels from '@/components/Panels.vue';
 import ProductIcon from '@/components/ProductIcon.vue';
 import ProductCheckItem from '@/components/ProductCheckListItem.vue';
+import Carousel from '@/components/Carousel.vue';
 </script>
 
 <template>
@@ -96,7 +97,7 @@ import ProductCheckItem from '@/components/ProductCheckListItem.vue';
             </section>
 
             <!-- Benefits section -->
-            <section class="bg-brand-white-smoke py-10">
+            <section class="py-10 bg-brand-white-smoke">
                 <div class="p-brand-xl">
                     <div class="flex flex-col gap-4 justify-center items-center text-center">
                         <img src="/src/assets/svg/icon.svg" alt="icon">
@@ -269,6 +270,24 @@ import ProductCheckItem from '@/components/ProductCheckListItem.vue';
                                     description="Ability to build your own dashboard across any data in the system." />
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials section -->
+            <section class="py-10 bg-brand-white-smoke">
+                <div class="p-brand-xl">
+                    <!-- info -->
+                    <div class="flex flex-col gap-4 justify-center items-center text-center mb-9">
+                        <img src="/src/assets/svg/icon.svg" alt="icon">
+                        <h1
+                            class="max-w-2xl mb-4 text-3xl tracking-tight leading-none md:text-5xl xl:text-6xl text-brand-black md:w-1/2">
+                            What home health leaders are saying</h1>
+                    </div>
+
+                    <!-- carousel -->
+                    <div>
+                        <Carousel />
                     </div>
                 </div>
             </section>
