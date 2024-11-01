@@ -291,6 +291,42 @@ import Carousel from '@/components/Carousel.vue';
                     </div>
                 </div>
             </section>
+
+            <!-- Call-To-Action section -->
+            <section class="relative bg-brand-white-smoke">
+                <div class="absolute top-auto bottom-0 w-full h-1/2 bg-brand-black"></div>
+
+                <div class="relative px-brand-xl lg:px-24 pb-brand-xl">
+                    <div class="rounded-2xl bg-brand-lime-dark">
+                        <!-- cta card -->
+                        <div class="relative flex justify-center items-center overflow-hidden p-12 lg:p-32">
+                            <img src="/src/assets/svg/background-logo.svg" loading="lazy" alt=""
+                                class="absolute will-change-transform max-w-[110%]"
+                                style="transform: translate3d(0px, -8.5992px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0.57328deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+                            <!-- content -->
+                            <div class="relative flex flex-col gap-4 w-full items-center">
+                                <img src="/src/assets/svg/icon.svg" alt="icon">
+
+                                <h1 class="mb-4 text-[3.35rem] leading-none lg:text-6xl text-brand-white-smoke">
+                                    Ready to get started?
+                                </h1>
+
+                                <div class="flex flex-col gap-3 md:flex-row text-brand-white-smoke font-bold">
+                                    <Button custom-classes="px-12 py-5 bg-brand-lime-bright text-nowrap">
+                                        Book a demo
+                                    </Button>
+
+                                    <a href="#"
+                                        class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-center border border-[#ffffff1a] bg-[#153034] rounded-lg w-3/4 text-nowrap md:w-full">
+                                        Contact us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </AppLayout>
 </template>
