@@ -1,4 +1,6 @@
 <script setup>
+import { getMediaUrl } from '@/main';
+
 defineProps({
     image: {
         type: String,
@@ -18,7 +20,7 @@ defineProps({
 <template>
     <div class="max-w-sm bg-brand-white-smoke border-gray-200 rounded-lg shadow">
         <a href="#">
-            <img class="rounded-t-lg" :src="image" alt="card-image" />
+            <img class="rounded-t-lg" :src="getMediaUrl(image)" alt="card-image" />
         </a>
 
         <div class="p-5">

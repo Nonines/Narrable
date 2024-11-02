@@ -1,5 +1,6 @@
 <script setup>
 import ProductIcon from '@/components/ProductIcon.vue';
+import { getMediaUrl } from '@/main';
 
 defineProps({
     icon: {
@@ -42,7 +43,7 @@ defineProps({
         <!-- video -->
         <div class="flex items-center h-full">
             <div class="flex justify-center items-center bg-gray-300 rounded-2xl w-full">
-                <video :src="video" autoplay muted loop>
+                <video :src="getMediaUrl(video)" autoplay muted loop>
                     Your browser does not support the video tag.
                 </video>
             </div>

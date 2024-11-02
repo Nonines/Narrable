@@ -1,4 +1,6 @@
 <script setup>
+import { getMediaUrl } from '@/main';
+
 defineProps({
     customClasses: {
         type: String,
@@ -21,6 +23,6 @@ defineProps({
 <template>
     <!-- icon -->
     <div :class="[defaultClasses, customClasses]">
-        <img :src="svg" :alt="altText">
+        <img :src="getMediaUrl(svg)" :alt="altText">
     </div>
 </template>
