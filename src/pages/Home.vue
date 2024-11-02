@@ -8,6 +8,33 @@ import Panels from '@/components/Panels.vue';
 import ProductIcon from '@/components/ProductIcon.vue';
 import ProductCheckItem from '@/components/ProductCheckListItem.vue';
 import Carousel from '@/components/Carousel.vue';
+
+import { onMounted, onBeforeUnmount, ref } from 'vue';
+
+const activeTab = ref(-1);
+const animationInterval = ref(null);
+
+const startAnimationCycle = () => {
+    activeTab.value++;
+    animationInterval.value = setInterval(() => {
+        activeTab.value = (activeTab.value + 1) % 3;
+    }, 8000);
+}
+
+const stopAnimationCycle = () => {
+    if (animationInterval.value) {
+        clearInterval(animationInterval.value);
+        animationInterval.value = null;
+    }
+}
+
+onMounted(() => {
+    startAnimationCycle();
+});
+
+onBeforeUnmount(() => {
+    stopAnimationCycle();
+})
 </script>
 
 <template>
@@ -145,17 +172,17 @@ import Carousel from '@/components/Carousel.vue';
                     </div>
 
                     <!-- tabs -->
-                    <div class="flex flex-col items-center md:flex-row md:justify-center">
-                        <WhyUsTab />
-                        <WhyUsTab heading="AI Powered"
+                    <div class="flex flex-col items-center md:flex-row md:justify-center relative">
+                        <WhyUsTab :isActiveTab="activeTab === 0" />
+                        <WhyUsTab :isActiveTab="activeTab === 1" heading="AI Powered"
                             description="Lastest advances in AI augment your day-to-day interactions." />
-                        <WhyUsTab heading="Modern Design"
+                        <WhyUsTab :isActiveTab="activeTab === 2" heading="Modern Design"
                             description="Built with the user in mind for the 21st century." />
                     </div>
 
                     <!-- panels-wrapper -->
                     <div class="overflow-hidden mt-8">
-                        <Panels />
+                        <Panels :active-tab-id="activeTab"/>
                     </div>
                 </div>
             </section>

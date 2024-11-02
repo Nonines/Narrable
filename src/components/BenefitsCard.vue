@@ -1,5 +1,5 @@
 <script setup>
-import ProductIcon from './ProductIcon.vue';
+import ProductIcon from '@/components/ProductIcon.vue';
 
 defineProps({
     icon: {

@@ -1,9 +1,15 @@
 <script setup>
-import VideoPanel from './VideoPanel.vue';
+import VideoPanel from '@/components/VideoPanel.vue';
+import ImagePanel from '@/components/ImagePanel.vue';
 
-// TODO: Add the extra panels that switch every few seconds
+defineProps({
+    activeTabId: {
+        type: Number,
+    }
+})
 </script>
 
 <template>
-    <VideoPanel />
+    <VideoPanel v-if="activeTabId === 1" />
+    <ImagePanel v-if="activeTabId === 2"/>
 </template>

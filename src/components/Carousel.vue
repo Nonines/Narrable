@@ -2,7 +2,7 @@
 
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
-import Card from './TestimonialCard.vue';
+import Card from '@/components/TestimonialCard.vue';
 import { ref } from 'vue';
 
 const splide = ref();
