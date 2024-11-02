@@ -296,7 +296,7 @@ import Carousel from '@/components/Carousel.vue';
             <section class="relative bg-brand-white-smoke">
                 <div class="absolute top-auto bottom-0 w-full h-1/2 bg-brand-black"></div>
 
-                <div class="relative px-brand-xl lg:px-24 pb-brand-xl">
+                <div class="relative px-6 md:px-brand-xl lg:px-24 pb-brand-xl">
                     <div class="rounded-2xl bg-brand-lime-dark">
                         <!-- cta card -->
                         <div class="relative flex justify-center items-center overflow-hidden p-12 lg:p-32">
@@ -327,6 +327,80 @@ import Carousel from '@/components/Carousel.vue';
                     </div>
                 </div>
             </section>
+
+            <footer class="px-6 pb-8 md:px-brand-xl lg:px-24 bg-brand-black">
+                <div
+                    class="pt-8 pb-12 grid gap-y-12 lg:gap-y-16 gap-x-[4vw] grid-cols-1 lg:grid-cols-[0.75fr_1fr] grid-rows-[auto] auto-cols-fr items-start">
+                    <!-- newsletter -->
+                    <div class="flex flex-col gap-6 max-w-[22.5rem]">
+                        <a href="#">
+                            <img src="/src/assets/svg/brand-logo-light.svg" alt="logo">
+                        </a>
+                        <p class="text-brand-slate-gray">Join our newsletter to stay up to date on features and
+                            releases.</p>
+
+                        <!-- form -->
+                        <div class="bg-brand-lime-dark md:mb-3">
+                            <form action="#"
+                                class="grid grid-cols-1 gap-y-3 md:gap-x-4 md:gap-y-4 md:grid-rows-[auto] md:grid-cols-[1fr_max-content] md:auto-cols-fr p-2 border border-brand-lime-light rounded-lg">
+                                <input type="email" name="email" placeholder="Enter your email" id=""
+                                    class="w-full bg-transparent py-2 px-3 rounded-lg">
+
+                                <input type="submit"
+                                    class="bg-white text-brand-lime-dark px-6 py-3 w-full rounded-lg font-semibold"
+                                    value="Sign up">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- links -->
+                    <div
+                        class="grid gap-y-9 gap-x-5 md:gap-x-8 md:gap-y-4 grid-cols-1 md:grid-cols-[1fr_1fr_1fr] grid-rows-[auto] auto-cols-fr items-start">
+                        <div class="flex flex-col items-start justify-start gap-4">
+                            <h6 class="text-white pb-2">Solutions</h6>
+                            <a href="#" class="text-brand-slate-gray">Owner/Executive</a>
+                            <a href="#" class="text-brand-slate-gray">Director of Nursing</a>
+                            <a href="#" class="text-brand-slate-gray">Director of Operations</a>
+                            <a href="#" class="text-brand-slate-gray">Director of Finance</a>
+                        </div>
+
+                        <div class="flex flex-col items-start justify-start gap-4">
+                            <h6 class="text-white pb-2">Company</h6>
+                            <a href="#" class="text-brand-slate-gray">About</a>
+                            <a href="#" class="text-brand-slate-gray">Resources</a>
+                            <a href="#" class="text-brand-slate-gray">Contact</a>
+                        </div>
+
+                        <div class="flex flex-col items-start justify-start gap-4">
+                            <h6 class="text-white pb-2">Connect</h6>
+                            <a href="#" class="text-brand-slate-gray">LinkedIn</a>
+                            <a href="#" class="text-brand-slate-gray">info@narrablehealth.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--logos -->
+                <div
+                    class="grid grid-cols-[1fr_1fr] grid-rows-[auto_auto] auto-cols-fr gap-x-4 gap-y-4 md:flex md:flex-wrap pb-12">
+                    <img src="/src/assets/images/footer-logo-1.jpg" alt="logo"
+                        class="rounded-md h-auto md:h-28 max-w-full">
+                    <img src="/src/assets/images/footer-logo-2.jpg" alt="logo"
+                        class="rounded-md h-auto md:h-28 max-w-full">
+                    <img src="/src/assets/images/footer-logo-3.jpg" alt="logo"
+                        class="rounded-md h-auto md:h-28 max-w-full">
+                    <img src="/src/assets/images/footer-logo-4.jpg" alt="logo"
+                        class="rounded-md h-auto md:h-28 max-w-full">
+                </div>
+
+                <!-- bottom -->
+                <div class="flex flex-col-reverse md:flex-row justify-between">
+                    <p class="text-brand-slate-gray">© Narrable Inc. All rights reserved.</p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a href="#" class="text-white">Privacy Policy</a>
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </AppLayout>
 </template>
