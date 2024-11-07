@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
                             tasks every day.</p>
                         <Button />
                         <a href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-brand-white-smoke rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
+                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-brand-white-smoke rounded-lg focus:ring-4 focus:ring-gray-100 bg-white">
                             Learn more
                         </a>
                     </div>
@@ -67,13 +67,13 @@ onBeforeUnmount(() => {
                         <span class="text-brand-black">Trusted by</span>
                         <div
                             class="flex flex-wrap gap-12 w-full justify-center items-center mt-8 text-gray-500 sm:justify-between">
-                            <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <a href="#" class="mr-5 mb-5 lg:mb-0">
                                 <img class="max-h-12" src="/src/assets/images/amcare-pro.png" alt="amcare">
                             </a>
-                            <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <a href="#" class="mr-5 mb-5 lg:mb-0">
                                 <img class="max-h-12" src="/src/assets/images/dhm-agency.webp" alt="dhm">
                             </a>
-                            <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <a href="#" class="mr-5 mb-5 lg:mb-0">
                                 <img class="max-h-12" src="/src/assets/images/plat-services.png" alt="platinum">
                             </a>
                         </div>
@@ -116,7 +116,7 @@ onBeforeUnmount(() => {
                             Book a demo
                         </Button>
                         <a href="#"
-                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 bg-white">
+                            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-brand-black border border-gray-300 rounded-lg focus:ring-4 focus:ring-gray-100 bg-white">
                             Contact us
                         </a>
                     </div>
@@ -182,7 +182,7 @@ onBeforeUnmount(() => {
 
                     <!-- panels-wrapper -->
                     <div class="overflow-hidden mt-8">
-                        <Panels :active-tab-id="activeTab"/>
+                        <Panels :active-tab-id="activeTab" />
                     </div>
                 </div>
             </section>
@@ -204,7 +204,7 @@ onBeforeUnmount(() => {
                                 Book a demo
                             </Button>
                             <a href="#"
-                                class="inline-flex items-center justify-center px-1 py-4 text-base font-medium text-center bg-brand-lime-light rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 w-3/4 text-nowrap md:w-full md:px-4">
+                                class="inline-flex items-center justify-center px-1 py-4 text-base font-medium text-center bg-brand-lime-light rounded-lg focus:ring-4 focus:ring-gray-100 w-3/4 text-nowrap md:w-full md:px-4">
                                 Contact us
                             </a>
                         </div>
