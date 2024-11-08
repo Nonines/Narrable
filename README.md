@@ -1,5 +1,9 @@
-# Vue 3 + Vite
+## Narrable-clone
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Narrable's [landing page](https://www.narrablehealth.com/), re-written from scratch using Vue and Tailwind and bundled with Vite.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+View the live deployment [here](nonines.github.io/narrable-clone/).
+
+## Local development
+
+To run or modify this project locally, make sure you have Node.js installed and then install dependencies via `npm install` in your terminal.
