@@ -11,16 +11,16 @@
                 <!-- links -->
                 <ul class="hidden lg:flex gap-3 justify-between items-center text-lg">
                     <li>
-                        <a href="#about" class="block p-6">About</a>
+                        <a href="#" class="block p-6">About</a>
                     </li>
                     <li>
-                        <a href="#solutions" class="block p-6">Solutions</a>
+                        <a href="#" class="block p-6">Solutions</a>
                     </li>
                     <li>
-                        <a href="#resources" class="block p-6">Resources</a>
+                        <a href="#" class="block p-6">Resources</a>
                     </li>
                     <li>
-                        <a href="#contact" class="block p-6">Contact</a>
+                        <a href="#" class="block p-6">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -45,16 +45,16 @@
             <nav v-if="isMenuOpen" class="bg-white text-black">
                 <ul class="flex flex-col text-left space-y-4 px-brand-xl py-4">
                     <li>
-                        <a href="#about" class="block py-2">About</a>
+                        <a href="#" class="block py-2">About</a>
                     </li>
                     <li>
-                        <a href="#solutions" class="block py-2">Solutions</a>
+                        <a href="#" class="block py-2">Solutions</a>
                     </li>
                     <li>
-                        <a href="#resources" class="block py-2">Resources</a>
+                        <a href="#" class="block py-2">Resources</a>
                     </li>
                     <li>
-                        <a href="#contact" class="block py-2">Contact</a>
+                        <a href="#" class="block py-2">Contact</a>
                     </li>
                 </ul>
             </nav>
