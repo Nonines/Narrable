@@ -2,7 +2,7 @@
 
 Narrable's [landing page](https://www.narrablehealth.com/), re-written from scratch using Vue and Tailwind and bundled with Vite.
 
-View the live deployment [here](nonines.github.io/narrable-clone/).
+View the live deployment [here](https://nonines.github.io/Narrable/).
 
 ## Local development
 
