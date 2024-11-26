@@ -1,4 +1,4 @@
-## Narrable-clone
+## Narrable
 
 Narrable's [landing page](https://www.narrablehealth.com/), re-written from scratch using Vue and Tailwind and bundled with Vite.
 
